@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: normal 1.6rem Arial, sans-serif;
+}
+
+header {
+  background-color: white;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.349);
+}
+
+.conteiner__header {
+  max-width: 1200px;
+  min-width: 280px;
+  margin: auto;
+  padding: 2rem;
+}
+
+#menu {
+  max-width: 50%;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.link {
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.link:hover {
+  color: #47a2e4;
+}
+
+#conteiner__main {
+  max-width: 1200px;
+  min-width: 280px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.content__color {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 10rem 0 5rem 0;
+}
+
+#btn__toggle__color {
+  background-color: transparent;
+  border-radius: 1rem;
+  border: 2px solid #47a2e4;
+  outline: 2px solid #000000;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.box__btn {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: inline;
+  color: white;
+}
+
+.box__color {
+  background-color: rgba(0, 0, 0, 0.863);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box__color input {
+  background-color: transparent;
+  color: #47a2e4;
+  font-size: 3rem;
+  font-weight: bold;
+  text-indent: 5px;
+  width: 45%;
+}
+
+#conteiner__footer {
+  max-width: 1200px;
+  min-width: 280px;
+  padding: 5rem;
+  margin: auto;
+}
+
+.footer__contact {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.footer__link {
+  color: black;
+}
+
+.footer__info {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer__info a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer__info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+}
