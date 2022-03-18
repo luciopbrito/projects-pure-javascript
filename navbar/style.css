@@ -48,6 +48,14 @@ span.destaque {
   color: #49a6ea;
 }
 
+div#footer__conteiner {
+  padding: 10rem 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     display: none;
