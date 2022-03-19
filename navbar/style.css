@@ -56,6 +56,10 @@ div#footer__conteiner {
   gap: 2rem;
 }
 
+div#footer__conteiner i {
+  color: #49a6ea;
+}
+
 @media screen and (max-width: 768px) {
   nav {
     display: none;
@@ -95,7 +99,7 @@ div#footer__conteiner {
   .menu__toggle.on nav {
     display: block;
     margin: 5rem 0;
-    box-shadow: 0px 3px 5px rgba(0 0 0 / 20%);
+    box-shadow: 0px 5px 5px rgba(0 0 0 / 10%);
   }
 
   .menu__toggle.on .link__menu {
@@ -105,7 +109,6 @@ div#footer__conteiner {
   .menu__toggle.on #menu {
     flex-direction: column;
     margin: 3rem;
-    transition-duration: 0.5s;
   }
 
   .menu__toggle.on .line__one {
