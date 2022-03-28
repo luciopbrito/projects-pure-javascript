@@ -11,3 +11,5 @@ Objetivo desse repositório é trazer projetos para um melhor desenvolvimento co
 [trocador de cores](https://luciopbrito.github.io/projetos-javascript-puro/trocador-de-cores/)
 
 [Navbar](https://luciopbrito.github.io/projetos-javascript-puro/navbar/)
+
+[Modal](https://luciopbrito.github.io/projetos-javascript-puro/modal/)
