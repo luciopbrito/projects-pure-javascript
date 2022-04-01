@@ -21,7 +21,7 @@ function verifColor(color) {
     if (color === '' && colors.length === 0) {
         alert('Digite um número.');
         txt_color.focus();
-    }  else if (color.length > 7) {
+    }  else if (color.length >= 7 || notExatHex(color) === true) {
         alert('Está cor não existe. Verifique novamente');
     } else if (color.includes('#') === false) {
         setHash(color);
@@ -31,7 +31,7 @@ function verifColor(color) {
 }
 
 function setHash(shColor) {
-    if (notExatHex(shColor) === true) {
+    if (notExatHex(shColor) === false) {
         if (shColor.length === 3) {
             let shArray = shColor.split('');
             let returnArray = "";
@@ -48,12 +48,16 @@ function setHash(shColor) {
 }
 
 function notExatHex (color) {
-    let not_exat = true;
+    let not_exat = false;
+    let nhQuant = 0;
     letras.forEach(letra => {
         if (color.includes(letra) === true) {
-            not_exat = !not_exat;
+            nhQuant = ++nhQuant;
         }
-    })
+    });
+    if (nhQuant > 0) {
+        not_exat = !not_exat;
+    }
     return not_exat;
 };
 
@@ -61,11 +65,13 @@ function toggleColor(tColor) {
     if (checkColor(tColor) === true) {
         document.body.style.backgroundColor = tColor;
         colorCurrent = tColor;
+    } else if (colorCurrent === tColor) {
+        alert('Cor em uso'); 
     } else {
         let key = colors.indexOf(tColor);
         document.body.style.backgroundColor = colors[key];
         colorCurrent = colors[key];
-    }
+    } 
     alternateForWhite();
 };
 
@@ -96,7 +102,7 @@ function randomColor(rColor) {
         alert('Não há cores disponíves, adicione uma cor');
         txt_color.focus();
     } else {
-        if (colors.length > 0) {
+        if (colors.length > 1) {
             let rKey = Math.floor(Math.random() * colors.length);
             let verify_color = colors.indexOf(rColor);
             if (verify_color != rKey) {

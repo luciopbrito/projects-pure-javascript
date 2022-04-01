@@ -143,4 +143,7 @@ h1 {
   html {
     font-size: 50%;
   }
+  .box__color input {
+    text-align: center;
+  }
 }
