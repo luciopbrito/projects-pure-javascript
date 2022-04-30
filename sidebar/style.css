@@ -1,0 +1,175 @@
+/* Document CSS */
+@charset "UTF-8";
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background:#F1F5F8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.212)
+}
+
+#logo a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5em;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.destaque {
+    color: #44A3E9;
+}
+
+.menu {
+    background: white;
+    height: 100vh;
+    padding: 100px 0 0 0;
+    position: absolute;
+}
+
+/* animation of sidebar */
+@keyframes sidebar_open {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 400px;
+    }
+}
+
+@keyframes sidebar_off {
+    from {
+        width: 400px;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+/* animation sidebar mobile */
+@keyframes sidebar_open_mobile {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 85vw;
+    }
+}
+
+@keyframes sidebar_off_mobile {
+    from {
+        width: 85vw;
+    }
+
+    to {
+        width: 0;
+    }
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 0 10px;
+}
+
+.menu #menu__contact {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.menu #menu__contact a {
+    color: #44A3E9;
+}
+
+.menu .btn__exit {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.menu .line1 {
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background: red;
+    transform: rotate(45deg);
+}
+
+.menu .line2 {
+    height: 5px;
+    width: 100%;
+    border-radius: 10px;
+    background: red;
+    transform: rotate(-45deg) translate(3.5px, -3px);
+}
+
+.menu .menu__link {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #597492;
+}
+
+.menu .menu__link:hover {
+    color: #44A3E9;
+}
+
+.menu__toggle {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.menu__toggle .line1 {
+    height: 5px;
+    background: #44A3E9;
+    border-radius: 10px;
+}
+
+.menu__toggle .line2 {
+    height: 5px;
+    background: #44A3E9;
+    border-radius: 10px;
+}
+
+.menu__toggle .line3 {
+    height: 5px;
+    background: #44A3E9;
+    border-radius: 10px;
+}
