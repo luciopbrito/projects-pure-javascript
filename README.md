@@ -15,3 +15,5 @@ Objetivo desse repositório é trazer projetos para um melhor desenvolvimento co
 [Modal](https://luciopbrito.github.io/projetos-javascript-puro/modal/)
 
 [Sidebar](https://luciopbrito.github.io/projetos-javascript-puro/sidebar/)
+
+[Perguntas Frequentes](https://luciopbrito.github.io/projetos-javascript-puro/perguntas-frequentes/)
