@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/94c265fb02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Perguntas Frequentes</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1>General Questions</h1>
+    </header>
+    <main id="main">
+        <div class="panel__shadow"></div>
+        <div id="panel__question">
+            <div class="btn__exit" onclick="ativeBtnExit()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <h2>Adicione Uma Nova Pergunta</h2>
+            <form class="form__question">
+                <label for="txtp">Pergunta:</label>
+                <input type="text" name="txtp" id="txtp">
+                <input id="btn__add__question" type="button" value="adicionar" onclick="ativeBtnAddQuestion()">
+            </form>
+        </div>
+        <div class="container">
+            <div class="question">
+                <div class="question__add" ondblclick="toggleBtnTrash()">
+                    <p>Ask a question</p>
+                    <div class="question__icons">
+                        <i class="fa-regular fa-2xl  fa-trash-can" onclick="ativeBtnTrash(1)"></i>
+                        <i class="fa-regular fa-2xl fa-square-plus" onclick="ativeBtnSquare()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="socialMedias">
+            <div class="socialMediasIcons">
+                <a href="http://www.linkedin.com/in/lucio-pereira-brito/">
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </a>
+                <a href="http://www.github.com/luciopbrito/">
+                    <i class="fa-brands fa-github fa-2xl"></i>    
+                </a>
+            </div>            
+        </div>
+    </footer>
+    <script src="mjquery.js"></script>
+</body>
+
+</html>
