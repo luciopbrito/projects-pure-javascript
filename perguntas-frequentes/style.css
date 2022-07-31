@@ -189,12 +189,3 @@ body {
         width: 90%;
     }
 }
-
-@keyframes active_trash {
-    from {
-        transform: rotate(0.1deg);
-    }
-    to {
-        transform: rotate(1deg);
-    }
-}
