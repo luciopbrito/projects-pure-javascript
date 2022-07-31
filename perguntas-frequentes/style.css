@@ -48,7 +48,7 @@ body {
     transform: translate(50%, -50%);
     border-radius: 10px;
     background: white;
-    max-width: 500px; 
+    width: 500px; 
     padding: 2rem;
     display: none;
 }
